@@ -46,5 +46,3 @@ if __name__ == '__main__':
 
 def main():
     run_wsgi_app(application)
-
-print "hello world"
