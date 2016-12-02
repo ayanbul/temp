@@ -1,4 +1,4 @@
 cron:
 - description: daily firebase data maintenance
   url: /tasks/data
-  schedule: every day 02:00
+  schedule: every 1 minutes
