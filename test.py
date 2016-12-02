@@ -44,4 +44,7 @@ application = webapp.WSGIApplication([('/tasks/data', ParseXMLHandler)], debug=T
 if __name__ == '__main__':
     run_wsgi_app(application)
 
+def main():
+    run_wsgi_app(application)
+
 print "hello world"
