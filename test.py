@@ -14,15 +14,19 @@ class Hello(webapp2.RequestHandler):
 
 class Goodbye2Min(webapp2.RequestHandler):
     def get(self):
-        i++
         self.response.write(i)
 
 
 
 app = webapp2.WSGIApplication([('/', Hello), ('/hello', Hello1Min), ('/goodbye', Goodbye2Min)], debug=True)
 
-#if __name__ == '__main__':
-#    run_wsgi_app(application)
-#
-#def main():
-#    run_wsgi_app(application)
+
+
+def main():
+    run_wsgi_app(application)
+
+if __name__ == '__main__':
+    i = i+1
+    run_wsgi_app(application)
+
+
