@@ -14,7 +14,7 @@ class Hello(webapp2.RequestHandler):
 
 class Goodbye2Min(webapp2.RequestHandler):
     def get(self):
-        i = i + 1
+        i++
         self.response.write(i)
 
 
