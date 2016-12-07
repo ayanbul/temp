@@ -15,6 +15,7 @@ class Hello(webapp2.RequestHandler):
 
 class Goodbye2Min(webapp2.RequestHandler):
     def get(self):
+        global i
         self.response.write(i)
         i = i + 1
 
