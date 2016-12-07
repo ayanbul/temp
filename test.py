@@ -5,7 +5,7 @@ import webapp2
 
 class Cron(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello')
+        self.response.write('Hello\n')
 
 class Hello(webapp2.RequestHandler):
     def get(self):
