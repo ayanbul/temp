@@ -1,15 +1,19 @@
-from google.appengine.ext import webapp2
-from google.appengine.ext.webapp.util import run_wsgi_app
+#from google.appengine.ext
+import webapp2
+#from google.appengine.ext.webapp2.util import run_wsgi_app
 
-class TestHandler(webapp2.RequestHandler):
+class Cron(webapp2.RequestHandler):
     def get(self):
         print "Hello\n"
 
-application = webapp2.WSGIApplication([('/tasks/data', TestHandler)], debug=True)
+class Hello(webapp2.RequestHandler):
+    def get(self):
+        print "Hello, World!"
 
-if __name__ == '__main__':
-    print "Hello World\n"
-    run_wsgi_app(application)
+app = webapp2.WSGIApplication([('/', Hello), ('/tasks/data', Cron)], debug=True)
 
-def main():
-    run_wsgi_app(application)
+#if __name__ == '__main__':
+#    run_wsgi_app(application)
+#
+#def main():
+#    run_wsgi_app(application)
