@@ -12,5 +12,3 @@ handlers:
 libraries:
 - name: webapp2
   version: latest
-- name: python-firebase
-  version: latest
