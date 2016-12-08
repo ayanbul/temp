@@ -1,7 +1,4 @@
 cron:
 - description: print hello every minute
-  url: /hello
-  schedule: every 1 minutes
-- description: print goodbye every 2 minutes
-  url: /goodbye
-  schedule: every 2 minutes
+  url: /dailyData
+  schedule: every 5 minutes
