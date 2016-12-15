@@ -1,4 +1,4 @@
 cron:
-- description: print hello every minute
+- description: delete any pack that was created over 24 hours ago
   url: /dailyData
-  schedule: every 5 minutes
+  schedule: every day 02:00

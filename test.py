@@ -10,7 +10,7 @@ from firebase import firebase, jsonutil
 class DailyMaintanence(webapp2.RequestHandler):
     def get(self):
         self.response.write('Script Delete')
-        fb = firebase.FirebaseApplication('https://skwad-729af.firebaseio.com', None)
+        fb = firebase.FirebaseApplication('https://test-50acf.firebaseio.com', None)
             packs = fb.get('/packs', None)
             
             if packs is not None:
@@ -38,7 +38,7 @@ class DailyMaintanence(webapp2.RequestHandler):
 
 class Main(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello')
+        self.response.write('Hello my boy')
 
 
 app = webapp2.WSGIApplication([('/', Main), ('/dailyData', DailyMaintanence)], debug=True)
